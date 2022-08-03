@@ -33,15 +33,15 @@ renderer.setSize(sizes.width, sizes.height);
 
 
 // Starting time (second try)
-//let time = Date.now();
+let time = Date.now();
 
 // Using Clock Method (third try)
 //const clock = new THREE.Clock();
 
 
 // Usig GSAP Library (fourth Try)
-gsap.to(mesh.position, { duration: 1, delay: 1, x: 2});
-gsap.to(mesh.position, { duration: 1, delay: 2, x: 0});
+//gsap.to(mesh.position, { duration: 1, delay: 1, x: 2});
+//gsap.to(mesh.position, { duration: 1, delay: 2, x: 0});
 
 // Animations
 const tick = () => 
@@ -54,14 +54,13 @@ const tick = () =>
     mesh.rotation.z += Math.PI * 0.02;
     */
 
-    /* // Second Try
+    // Second Try
     const currentTime = Date.now();
     const deltaTime = currentTime - time;
     time = currentTime;
 
-    mesh.scale.y += 0.01 * deltaTime * 2;
+    //mesh.scale.y += 0.01 * deltaTime * 2;
     mesh.rotation.x += 0.01 * deltaTime * 2;
-    */
 
     // Third Try - Using Clock
     //const elapsedTime = clock.getElapsedTime();
